@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10101b">
+<title>Mayur Design Studio</title>
+<style>
+:root{--bg:#0d0d17;--panel:#171726;--panel2:#202034;--text:#f7f5ff;--muted:#aaa8c0;--purple:#8b5cf6;--pink:#ec4899;--line:#34334a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#34205c 0,transparent 32%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Gujarati",sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}.brand{font-weight:900;letter-spacing:.2px;font-size:20px}.brand span{color:#c4a7ff}.tag{color:var(--muted);font-size:13px}
+nav{display:flex;gap:18px}nav a{color:var(--muted);text-decoration:none;font-size:14px}
+.hero{padding:62px 0 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.eyebrow{color:#d2baff;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.06;margin:12px 0}.hero h1 em{font-style:normal;color:#c4a7ff}.hero p{color:var(--muted);line-height:1.7;max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{border:0;border-radius:13px;padding:13px 18px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.primary{background:linear-gradient(110deg,var(--purple),var(--pink));color:white}.secondary{border:1px solid var(--line);color:white;background:#ffffff08}
+.preview{border:1px solid #ffffff20;border-radius:25px;background:linear-gradient(145deg,#272043,#171726);padding:20px;box-shadow:0 24px 70px #0008}.preview-top{display:flex;justify-content:space-between;color:#d7c8ff;font-size:13px}.mock-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.mock{min-height:115px;border-radius:16px;padding:13px;display:flex;flex-direction:column;justify-content:end;font-weight:900;font-size:18px;overflow:hidden}.mock small{font-size:10px;letter-spacing:1px}.m1{background:linear-gradient(135deg,#ff7a18,#af002d 75%)}.m2{background:linear-gradient(135deg,#00a6a6,#143d79)}.m3{background:linear-gradient(135deg,#8b5cf6,#ec4899)}.m4{background:linear-gradient(135deg,#f6b73c,#7a2c85)}
+section{padding:30px 0 46px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.section-head h2{font-size:28px;margin:0}.section-head p{color:var(--muted);margin:5px 0 0;font-size:14px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.filter{background:var(--panel);border:1px solid var(--line);color:var(--muted);padding:9px 13px;border-radius:99px;cursor:pointer}.filter.active{background:#6941c6;color:#fff;border-color:#8b5cf6}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}.art{height:165px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;font-weight:900;font-size:23px}.art small{font-size:10px;letter-spacing:1.4px}.art span{max-width:85%}.a1{background:linear-gradient(135deg,#ff512f,#dd2476)}.a2{background:linear-gradient(135deg,#1d976c,#093637)}.a3{background:linear-gradient(135deg,#654ea3,#eaafc8);color:#21142d}.a4{background:linear-gradient(135deg,#232526,#414345)}.a5{background:linear-gradient(135deg,#f7971e,#ffd200);color:#39220b}.a6{background:linear-gradient(135deg,#396afc,#2948ff)}
+.card-body{padding:15px}.card h3{margin:0 0 5px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:15px}.price{font-weight:900;color:#d5bdff}.smallbtn{padding:9px 12px;font-size:12px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.info div{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.info b{display:block;margin-bottom:5px}.info p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+.contact{background:linear-gradient(110deg,#38246b,#662e65);padding:25px;border-radius:22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.contact h2{margin:0 0 6px}.contact p{margin:0;color:#e2d8f5;font-size:14px}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:12px}
+.note{font-size:12px;color:var(--muted);line-height:1.6;margin-top:15px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:38px}.preview{max-width:500px}.products{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}nav{gap:10px}nav a{font-size:12px}}
+@media(max-width:480px){.products{grid-template-columns:1fr}.art{height:145px}.top{align-items:flex-start;gap:12px;flex-direction:column}.hero h1{font-size:42px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div><div class="brand">MAYUR <span>DESIGN STUDIO</span></div><div class="tag">Creative designs • Made with care</div></div>
+  <nav><a href="#designs">Designs</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">તમારા વિચારોને આપો નવી ઓળખ</div>
+    <h1>Design that<br><em>gets noticed.</em></h1>
+    <p>YouTube Thumbnail, Instagram Poster અને Festival Creative — તમારા કન્ટેન્ટ અને બિઝનેસ માટે આકર્ષક ડિઝાઇન.</p>
+    <div class="actions"><a class="btn primary" href="#designs">ડિઝાઇન જુઓ</a><a class="btn secondary" href="#contact">ઓર્ડર માટે સંપર્ક</a></div>
+  </div>
+  <div class="preview">
+    <div class="preview-top"><b>FEATURED WORK</b><span>✦ STUDIO COLLECTION</span></div>
+    <div class="mock-grid">
+      <div class="mock m1"><small>YOUTUBE THUMBNAIL</small>BIG ENERGY</div>
+      <div class="mock m2"><small>INSTAGRAM POST</small>FRESH IDEAS</div>
+      <div class="mock m3"><small>FESTIVAL CREATIVE</small>CELEBRATE</div>
+      <div class="mock m4"><small>MUSIC COVER</small>NEW VIBES</div>
+    </div>
+  </div>
+</section>
+<section id="designs">
+  <div class="section-head"><div><h2>Our Design Services</h2><p>તમને ગમતી ડિઝાઇન પસંદ કરો અને પૂછપરછ મોકલો.</p></div></div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">બધા</button><button class="filter" data-filter="thumbnail">Thumbnail</button><button class="filter" data-filter="poster">Poster</button><button class="filter" data-filter="festival">Festival</button>
+  </div>
+  <div class="products">
+    <article class="card" data-type="thumbnail"><div class="art a1"><small>YOUTUBE THUMBNAIL</small><span>તમારો વિડિયો<br>બનાવો ખાસ!</span></div><div class="card-body"><h3>YouTube Thumbnail</h3><p>ગીતો, વ્લોગ અને વિડિયો માટે.</p><div class="card-foot"><span class="price">₹99 થી</span><button class="btn primary smallbtn order" data-item="YouTube Thumbnail">ઓર્ડર પૂછો</button></div></div></article>
+    <article class="card" data-type="poster"><div class="art a2"><small>INSTAGRAM CREATIVE</small><span>MAKE YOUR<br>BRAND POP</span></div><div class="card-body"><h3>Instagram Poster</h3><p>પેજ અને બિઝનેસ પ્રમોશન માટે.</p><div class="card-foot"><span class="price">₹99 થી</span><button class="btn primary smallbtn order" data-item="Instagram Poster">ઓર્ડર પૂછો</button></div></div></article>
+    <article class="card" data-type="festival"><div class="art a3"><small>FESTIVAL SPECIAL</small><span>ઉત્સવની<br>શુભેચ્છા</span></div><div class="card-body"><h3>Festival Poster</h3><p>તહેવાર અને શુભેચ્છા પોસ્ટર.</p><div class="card-foot"><span class="price">₹79 થી</span><button class="btn primary smallbtn order" data-item="Festival Poster">ઓર્ડર પૂછો</button></div></div></article>
+    <article class="card" data-type="thumbnail"><div class="art a4"><small>MUSIC COVER</small><span>NEW SONG<br>OUT NOW</span></div><div class="card-body"><h3>Song Cover Art</h3><p>સિંગલ અને મ્યુઝિક પ્રમોશન માટે.</p><div class="card-foot"><span class="price">₹99 થી</span><button class="btn primary smallbtn order" data-item="Song Cover Art">ઓર્ડર પૂછો</button></div></div></article>
+    <article class="card" data-type="poster"><div class="art a5"><small>BUSINESS PROMO</small><span>YOUR SHOP<br>YOUR STYLE</span></div><div class="card-body"><h3>Business Poster</h3><p>દુકાન, ઓફર અને સર્વિસ માટે.</p><div class="card-foot"><span class="price">₹149 થી</span><button class="btn primary smallbtn order" data-item="Business Poster">ઓર્ડર પૂછો</button></div></div></article>
+    <article class="card" data-type="poster"><div class="art a6"><small>EVENT PROMOTION</small><span>JOIN THE<br>CELEBRATION</span></div><div class="card-body"><h3>Event Poster</h3><p>ઇવેન્ટ અને કાર્યક્રમની જાહેરાત.</p><div class="card-foot"><span class="price">₹149 થી</span><button class="btn primary smallbtn order" data-item="Event Poster">ઓર્ડર પૂછો</button></div></div></article>
+  </div>
+  <p class="note">નોંધ: અહીં બતાવેલી કિંમતો ઉદાહરણરૂપ છે. ઓર્ડર લેતા પહેલાં તું પોતાની કિંમત અને કામની શરતો નક્કી કરજે.</p>
+</section>
+<section id="about">
+  <div class="section-head"><div><h2>Why choose us?</h2><p>સરળ ઓર્ડર પ્રક્રિયા અને તારી જરૂરિયાત મુજબ ડિઝાઇન.</p></div></div>
+  <div class="info"><div><b>✦ Custom Design</b><p>તમારા લખાણ, ફોટા અને પસંદગી મુજબ ડિઝાઇન.</p></div><div><b>⚡ Clear Communication</b><p>કામ શરૂ કરતાં પહેલાં કિંમત અને ડિલિવરી સમય નક્કી કરો.</p></div><div><b>♡ Personal Support</b><p>ઓર્ડર અંગે સીધો મેસેજ કરીને વાત કરો.</p></div></div>
+</section>
+<section id="contact">
+  <div class="contact"><div><h2>તમારી ડિઝાઇન તૈયાર કરીએ?</h2><p>WhatsApp પર મેસેજ કરો અને તમારી જરૂરિયાત જણાવો.</p></div><a class="btn primary" id="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp પર સંપર્ક કરો</a></div>
+  <p class="note">શરૂઆત કરતાં પહેલાં નીચેના કોડમાં તમારો WhatsApp નંબર country code સાથે ઉમેરવો જરૂરી છે. ઉદાહરણ: 91 પછી 10 અંકનો નંબર. જાહેર વેબસાઇટ પર વ્યક્તિગત સરનામું કે સંવેદનશીલ માહિતી ન મૂકશો.</p>
+</section>
+</main>
+<footer>© <span id="year"></span> Mayur Design Studio. All rights reserved.</footer>
+</div>
+<script>
+/* SETUP: Replace 91XXXXXXXXXX with your WhatsApp number (country code + number, digits only). */
+const WHATSAPP_NUMBER = "918780795020";
+function openWhatsApp(item){
+  if(WHATSAPP_NUMBER.includes("X")){alert("પહેલાં HTML કોડમાં WHATSAPP_NUMBER બદલીને તમારો નંબર ઉમેરો.");return;}
+  const msg = item ? `નમસ્તે Mayur Design Studio, મને ${item} માટે ઓર્ડર અને કિંમતની માહિતી જોઈએ છે.` : "નમસ્તે Mayur Design Studio, મને ડિઝાઇન વિશે માહિતી જોઈએ છે.";
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+}
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));btn.classList.add("active");
+  document.querySelectorAll(".card").forEach(card=>card.style.display=(btn.dataset.filter==="all"||card.dataset.type===btn.dataset.filter)?"":"none");
+}));
+document.querySelectorAll(".order").forEach(btn=>btn.addEventListener("click",()=>openWhatsApp(btn.dataset.item)));
+document.getElementById("whatsapp").addEventListener("click",e=>{e.preventDefault();openWhatsApp("");});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
